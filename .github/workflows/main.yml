@@ -1,16 +1,17 @@
-name: UI tests
+name: Cypress Tests
+
 on: push
+
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      # Install NPM dependencies, cache them correctly
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
-      - uses: actions/upload-artifact@v3
         with:
-          name: Mochawesome-Report
-          path: cypress/reports/html
+          build: npm run build
+          start: npm start
