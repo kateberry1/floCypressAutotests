@@ -9,8 +9,6 @@ module.exports = defineConfig({
     inline: true,
     reportPageTitle: "Flo tests",
     reportTitle: "Flo tests",
-    reportFilename: "[status]_[datetime]-report",
-    timestamp: "dddd_mmmm_dS_yyyy-h_MM_ss_TT",
   },
   video: true,
   videoCompression: true,

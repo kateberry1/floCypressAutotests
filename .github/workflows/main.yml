@@ -14,9 +14,7 @@ jobs:
         run: npm ci
 
       - name: Run Cypress Tests
-        uses: cypress-io/github-action@v6
-        with:
-          build: npm run test:run:local
+        run: npm run test:run:local
 
       # Upload Mochawesome report as artifact
       - name: Upload Mochawesome Report
