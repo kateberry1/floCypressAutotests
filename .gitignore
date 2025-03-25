@@ -1,0 +1,9 @@
+node_modules
+results
+screenshots
+videos
+mochawesome-report
+.DS_Store
+cypress/config
+cypress.json
+cypress/downloads
