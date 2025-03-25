@@ -5,13 +5,23 @@ on: push
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
           build: npm run test:run:local
-          start: npm start
+
+      # Upload Mochawesome report as artifact
+      - name: Upload Mochawesome Report
+        if: always() # ensures this runs even if tests fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-report
+          path: cypress/reports/mochawesome-report/
