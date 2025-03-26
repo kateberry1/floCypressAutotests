@@ -6,11 +6,11 @@ This project contains Cypress-based automated end-to-end tests for the [2025 EIW
 
 ## 📌 Features Covered
 
-- ✅ **Page Load Validation** — checks title, banner, and event dates
-- ✅ **Navigation Tabs** — verifies URL/content for Results, Videos, News, Schedule
-- ✅ **Event Filters** — tests dropdown filters by Team, Weight Class, Round
-- ✅ **Search Functionality** — checks input behavior and edge cases
-- ✅ **Video Playback** — confirms replay and video controls work correctly
+- ✅ **Page Load Validation** - checks title, banner, and event dates
+- ✅ **Navigation Tabs** - verifies URL/content for Results, Videos, News, Schedule
+- ✅ **Event Filters** - tests dropdown filters by Team, Weight Class, Round
+- ✅ **Search Functionality** - checks input behavior and edge cases
+- ✅ **Video Playback** - confirms replay and video controls work correctly
 
 ---
 
